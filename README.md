@@ -49,8 +49,8 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Set your Anthropic API key
-export ANTHROPIC_API_KEY="your_api_key_here"
+# 4. Set your Groq API key
+export GROQ_API_KEY="your_api_key_here"
 # Windows: set ANTHROPIC_API_KEY=your_api_key_here
 
 # 5. Run the app
@@ -61,12 +61,12 @@ streamlit run app.py
 
 ## 🔑 API Key Setup
 
-Get a free API key at [console.anthropic.com](https://console.anthropic.com).
+Get a free API key at [console.groq.com](https://console.groq.com).
 
 For Streamlit Cloud deployment, add it as a secret:
 ```toml
 # .streamlit/secrets.toml
-ANTHROPIC_API_KEY = "your_key_here"
+GROQ_API_KEY = "your_key_here"
 ```
 
 ---
@@ -114,7 +114,7 @@ jobfit-ai/
 └── utils/
     ├── extractor.py        # PDF/DOCX text extraction
     ├── analyzer.py         # NLP matching engine
-    └── ai_engine.py        # Anthropic API integration
+    └── ai_engine.py        # Groq API integration
 ```
 
 ---
@@ -138,8 +138,4 @@ jobfit-ai/
 
 ---
 
-## 👤 Author
-
-Built as a portfolio project to demonstrate end-to-end data science and NLP skills.
-
-**Skills demonstrated:** Python · NLP · scikit-learn · Groq API · Streamlit deployment · Data pipeline design
+Made by **Amulya Reddy**
