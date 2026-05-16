@@ -6,7 +6,7 @@ An AI-powered web application that analyzes how well your resume matches a job d
 
 ## 🚀 Live Demo
 
-> Deploy on [Streamlit Cloud](https://skillmatch-app.streamlit.app/) — free, one-click deployment.
+🔗 **[Click here to try JobFit AI](https://skillmatch-app.streamlit.app/)**
 
 ---
 
