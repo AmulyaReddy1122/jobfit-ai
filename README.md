@@ -18,11 +18,10 @@ An AI-powered web application that analyzes how well your resume matches a job d
 | Skill extraction & matching | spaCy, regex, custom taxonomy |
 | Overall match score | TF-IDF + cosine similarity (sklearn) |
 | Per-category skill breakdown | Custom NLP pipeline |
-| JD insights (role, exp, salary) | Anthropic Claude API |
-| AI cover letter bullets | Anthropic Claude API |
-| Personalized skill roadmap | Anthropic Claude API |
+| JD insights (role, exp, salary) | Groq API (Llama 3.3 70b) |
+| AI cover letter bullets | Groq API (Llama 3.3 70b) |
+| Personalized skill roadmap | Groq API (Llama 3.3 70b) |
 | Downloadable report | Streamlit |
-
 ---
 
 ## 🛠 Tech Stack
@@ -31,7 +30,7 @@ An AI-powered web application that analyzes how well your resume matches a job d
 - **Streamlit** — web UI
 - **scikit-learn** — TF-IDF vectorization, cosine similarity
 - **spaCy** — NLP text processing
-- **Anthropic API (Claude)** — AI-powered insights
+- **Groq API (Llama 3.3 70b)** — AI-powered insights (free)
 - **PyPDF2 + python-docx** — document parsing
 
 ---
@@ -40,7 +39,7 @@ An AI-powered web application that analyzes how well your resume matches a job d
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/jobfit-ai.git
+git clone https://github.com/AmulyaReddy1122/jobfit-ai.git
 cd jobfit-ai
 
 # 2. Create virtual environment
@@ -94,7 +93,7 @@ Matched Skills    Missing Skills
       Match Score (0-100%)
              │
              ▼
-    Anthropic API Calls
+    Groq API Calls
    ┌──────┬──────┬──────┐
    │  JD  │Cover │Skill │
    │Insig-│Letter│Road- │
@@ -143,4 +142,4 @@ jobfit-ai/
 
 Built as a portfolio project to demonstrate end-to-end data science and NLP skills.
 
-**Skills demonstrated:** Python · NLP · scikit-learn · API integration · Streamlit deployment · Data pipeline design
+**Skills demonstrated:** Python · NLP · scikit-learn · Groq API · Streamlit deployment · Data pipeline design
