@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 # 4. Set your Groq API key
 export GROQ_API_KEY="your_api_key_here"
-# Windows: set ANTHROPIC_API_KEY=your_api_key_here
+# Windows: set GROQ_API_KEY=your_api_key_here
 
 # 5. Run the app
 streamlit run app.py
